@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar,
+footer {
+  border: 2px solid black;
+  width: 96%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  padding-left: 3rem;
+}
+
+.navbar_menu {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  height: 100%;
+  align-items: center;
+}
+
+.navbar_menu_item {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.navbar_menu_item:hover {
+  text-decoration: underline;
+}
+
+#datetime {
+  height: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: right;
+  margin-right: 1rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem auto;
+  gap: 20px;
+}
+
+#addSection {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem auto;
+  gap: 20px;
+}
+
+#listSection {
+  margin-inline: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+}
+
+button {
+  align-self: flex-end;
+  padding: 5px 15px;
+  box-shadow: 5px 5px 0 black;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  border: 2px solid black;
+  width: 100%;
+}
+
+.container > div {
+  display: grid;
+  grid-template-columns: 20% 1fr 15%;
+  gap: 10px;
+  padding: 5px 15px;
+}
+
+.removeButton {
+  margin: 6px;
+}
+
+.container > div:nth-child(even) {
+  background-color: #cbede9;
+}
+
+.hidden {
+  display: none !important;
+}
+
+footer {
+  font-weight: bold;
+}
+
+.contact_list {
+  padding-left: 40px;
+}
+
+#contact_sec {
+  display: grid;
+  gap: 20px;
+}
