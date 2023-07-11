@@ -1,8 +1,7 @@
-import { DateTime } from './modules/luxon.js';
+import * as luxon from 'https://esm.run/luxon'; // eslint-disable-line
 import Book from './modules/book.js';
 import BookStorage from './modules/bookStorage.js';
 import { getLocalStorage, saveLocalStorage } from './modules/localStorage.js';
-// import { DateTime } from "luxon";
 
 const booksContainer = document.querySelector('.container');
 const booksTitle = document.querySelector('#booksTitle');
@@ -16,9 +15,8 @@ const addSection = document.querySelector('#addSection');
 const contactSection = document.querySelector('#contactSection');
 const datetime = document.getElementById('datetime');
 
-
 setInterval(() => {
-  const now = DateTime.now().toLocaleString(DateTime.DATETIME_FULL);
+  const now = luxon.DateTime.now().toLocaleString(luxon.DateTime.DATETIME_FULL);
   datetime.innerHTML = `${now}`;
 }, 1000);
 
