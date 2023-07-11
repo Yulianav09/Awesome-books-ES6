@@ -1,6 +1,8 @@
+import { DateTime } from './modules/luxon.js';
 import Book from './modules/book.js';
 import BookStorage from './modules/bookStorage.js';
 import { getLocalStorage, saveLocalStorage } from './modules/localStorage.js';
+// import { DateTime } from "luxon";
 
 const booksContainer = document.querySelector('.container');
 const booksTitle = document.querySelector('#booksTitle');
@@ -14,12 +16,10 @@ const addSection = document.querySelector('#addSection');
 const contactSection = document.querySelector('#contactSection');
 const datetime = document.getElementById('datetime');
 
+
 setInterval(() => {
-  const now = new Date();
-  const options = { year: 'numeric', month: 'long', day: 'numeric' };
-  const date = now.toLocaleDateString('en-US', options);
-  const time = now.toLocaleTimeString();
-  datetime.innerHTML = `${date} ${time}`;
+  const now = DateTime.now().toLocaleString(DateTime.DATETIME_FULL);
+  datetime.innerHTML = `${now}`;
 }, 1000);
 
 navList.addEventListener('click', () => {
