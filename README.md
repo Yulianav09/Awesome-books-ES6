@@ -53,7 +53,7 @@ For more information on the importance of a professional README for your reposit
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Awesome Books] <a name="Awesome Books"></a>
+# 📖 Awesome Books <a name="Awesome Books"></a>
 
 
 **Awesome Books** is a simple book list
