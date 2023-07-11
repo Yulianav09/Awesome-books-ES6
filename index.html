@@ -8,18 +8,45 @@
   <title>Awesome Books</title>
 </head>
 <body>
-  <h1>Aweson Books</h1>
+  <header>
+    <div class="navbar">
+      <h1>Awesome books</h1>
+      <ul class="navbar_menu">
+        <li class="navbar_menu_item" id="navList">List</li>
+        <li class="navbar_menu_item" id="navAdd">Add new</li>
+        <li class="navbar_menu_item" id="navContact">contact</li>
+      </ul>
+    </div>
+    <div id="datetime"></div>
+  </header>
+  <main id="listSection">
+  <h2>All Awesome Books</h2>  
   <div class="container">
 
   </div>
-  <hr>
+</main>
+  <main class="hidden" id="addSection">
   <h2>Add a new book</h2>
   <form id="form">
-    <input id="booksTitle" type="text" name="title" placeholder="Title"><br>
-    <br>
-    <input id="booksAuthors" type="text" name="author" placeholder="Author"><br>
-    <br>
+    <input id="booksTitle" type="text" name="title" placeholder="Title">
+    <input id="booksAuthors" type="text" name="author" placeholder="Author">
   </form>
-    <button class="addButton">Add</button>
+  <button class="addButton">Add</button>
+</main>
+  <main class="hidden" id="contactSection">
+  <h2 id="contact">Contact information </h2>
+      <div class="contact" id="contact_sec">
+        <p class="contact_bio">Do have any question or you just want to say 'Hello' ?<br>
+          You can reach out to us!</p>
+        <ul class="contact_list">
+          <li class="contact_list_item">Our e-email : mhnazry2020@gmail.com </li>
+          <li class="contact_list_item">Our phone number : +93779975529</li>
+          <li class="contact_list_item">Our address: Aria city, Kabul, Afghanistan</li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <p>copyright...</p>
+    </footer>
 </body>
 </html>
